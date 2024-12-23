@@ -20,7 +20,7 @@ def weighted_categorical_crossentropy(weights):
 class_weights_array = np.array([1.0, 1.0, 1.0, 1.0, 1.0])  # Replace with actual weights
 
 # Load the model
-model_path = 'C:/Users/LENOVO/Downloads/real-time-emotion-recognition/cnn_trial.h5'
+model_path = 'C:/Users/Melvin Tang/OneDrive/Codes/I2ML/FINALPRO/model/cnn_trialNew.h5'
 model = load_model(model_path, compile=False)
 model.compile(optimizer='adam', loss=weighted_categorical_crossentropy(class_weights_array), metrics=['accuracy'])
 
@@ -29,11 +29,11 @@ categories = ['angry', 'fear', 'happy', 'neutral', 'sad']
 
 # Define a dictionary mapping emotions to filter file paths
 filter_paths = {
-    'angry': 'C:/Users/LENOVO/Downloads/real-time-emotion-recognition/filters/path_to_angry_filter.png',
-    'fear': 'C:/Users/LENOVO/Downloads/real-time-emotion-recognition/filters/path_to_fear_filter.png',
-    'happy': 'C:/Users/LENOVO/Downloads/real-time-emotion-recognition/filters/path_to_happy_filter.png',
-    'neutral': 'C:/Users/LENOVO/Downloads/real-time-emotion-recognition/filters/path_to_neutral_filter.png',
-    'sad': 'C:/Users/LENOVO/Downloads/real-time-emotion-recognition/filters/path_to_sad_filter.png'
+    'angry': 'E:/Projects/real-time-emotion-recognition/filters/path_to_angry_filter.png',
+    'fear': "E:/Projects/real-time-emotion-recognition/filters/path_to_fear_filter.png",
+    'happy': "E:/Projects/real-time-emotion-recognition/filters/path_to_happy_filter.png",
+    'neutral': "E:/Projects/real-time-emotion-recognition/filters/path_to_neutral_filter.png",
+    'sad': "E:/Projects/real-time-emotion-recognition/filters/path_to_sad_filter.png"
 }
 
 # Load filters into a dictionary
@@ -94,7 +94,7 @@ while True:
 
     # Convert frame to grayscale and apply noise reduction
     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    blurred_frame = cv2.GaussianBlur(gray_frame, (5, 5), 0)  # Noise reduction
+    # blurred_frame = cv2.GaussianBlur(gray_frame, (5, 5), 0)  # Noise reduction
 
     # Detect faces using Haar Cascade
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
