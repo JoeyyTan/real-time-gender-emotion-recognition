@@ -15,21 +15,55 @@
 
 <h2 align="center">Model Architecture</h2>
 
-<table>
+<table align="center" style="margin: 0 auto; border-collapse: collapse;">
 <tr>
-<td width="50%">
+<td align="left" style="padding: 20px; vertical-align: top;">
+<h3>Emotion Classification (CNN)</h3>
 
-### Emotion Classification (CNN)
-- 4 Convolutional blocks including:
+• 4 Convolutional blocks including:
   - Convolution Layer
   - Max Pooling Layer
   - Batch Normalization
   - Dropout Layer
-- Fully Connected blocks with:
+
+• Fully Connected blocks with:
   - Flatten Layer
   - Dense Layer
   - Batch Normalization
   - Final Dense Layer with Softmax activation
+</td>
+<td align="left" style="padding: 20px; vertical-align: top;">
+<h3>Gender Classification (SVM)</h3>
+
+• HOG (Histogram of Oriented Gradients) feature extraction
+• Linear kernel SVM classifier
+• 80-20 train-test split ratio
+• Feature preprocessing and normalization
+• Optimized hyperparameter selection
+</td>
+</tr>
+</table>
+
+<h2 align="center">Performance Metrics</h2>
+
+<table align="center" style="margin: 0 auto; border-collapse: collapse;">
+<tr>
+<td align="left" style="padding: 20px; vertical-align: top;">
+<h3>Emotion Recognition Results</h3>
+
+• Test Accuracy: 0.67
+• Test Loss: 1.1542
+• F1-score: 0.65
+</td>
+<td align="left" style="padding: 20px; vertical-align: top;">
+<h3>Gender Recognition Results</h3>
+
+• Accuracy: 0.88
+• Female F1-score: 0.88
+• Male F1-score: 0.88
+</td>
+</tr>
+</table>
 
 </td>
 <td width="50%">
@@ -46,27 +80,6 @@
 </table>
 
 <h2 align="center">Performance Metrics</h2>
-
-<table>
-<tr>
-<td width="50%">
-
-### Emotion Recognition Results
-- Test Accuracy: 0.67
-- Test Loss: 1.1542
-- F1-score: 0.65
-
-</td>
-<td width="50%">
-
-### Gender Recognition Results
-- Accuracy: 0.88
-- Female F1-score: 0.88
-- Male F1-score: 0.88
-
-</td>
-</tr>
-</table>
 
 <h2 align="center">Installation Instructions</h2>
 
