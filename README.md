@@ -141,31 +141,6 @@ python
 >>> exit()
 ```
 
-## Usage
-
-[Add specific instructions on how to run your project]
-
-## Dataset
-
-This project uses:
-- FER 2013 Dataset for emotion recognition
-- Gender Dataset from Kaggle for gender classification
-
-## Limitations
-
-- Accuracy variations across different emotions
-- Limited by image size in the dataset
-- Grayscale image processing only
-- Performance impact with multiple faces in frame
-- Real-time processing stutters with multiple subjects
-
-## Future Improvements
-
-- Enhanced accuracy through additional data augmentation
-- Optimization for multiple face detection
-- Model architecture refinements
-- Performance optimization for real-time processing
-
 ## References
 
 - [FER 2013 Dataset](https://www.kaggle.com/datasets/msambare/fer2013/data)
@@ -173,11 +148,3 @@ This project uses:
 - [A study on computer vision for facial emotion recognition](https://www.nature.com/articles/s41598-023-35446-4.pdf)
 - [Gender classification with support vector machines](https://ieeexplore.ieee.org/document/840651)
 - [Real Time CNN for Emotion and Gender Classification](https://github.com/oarriaga/face_classification/blob/master/report.pdf)
-
-## License
-
-[Add your chosen license]
-
-## Contact
-
-[Add your contact information]
