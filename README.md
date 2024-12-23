@@ -54,8 +54,6 @@
 ### Required Model Download
 Before running the project, you must download the pre-trained model:
 1. Download the model file from [this Google Drive link](https://drive.google.com/file/d/1dTc5i03YORHfJlixI6TDWCmLmEsLin2O/view?usp=sharing)
-2. Create a folder named `models` in your project root directory
-3. Place the downloaded file in the `models` folder
 
 > **Note**: The model file exceeds GitHub's 100MB file size limit and is therefore not included in the repository. You must download it separately.
 
