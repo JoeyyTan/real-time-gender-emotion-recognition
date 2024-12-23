@@ -4,7 +4,7 @@
 
 <div align="center">This project implements a dual-model approach for real-time facial analysis, achieving <b>67% accuracy</b> in emotion detection and <b>88% accuracy</b> in gender classification.</div>
 
-<h2 align="center">Features</h2>
+## Features
 
 - Real-time emotion recognition using Convolutional Neural Networks (CNN)
 - Gender classification using Support Vector Machine (SVM) with HOG features
@@ -13,11 +13,7 @@
 - Gaussian blur and Haar cascade implementation for improved face detection
 - Batch normalization and dropout layers to prevent overfitting
 
-<h2 align="center">Model Architecture</h2>
-
-<table>
-<tr>
-<td width="50%">
+## Model Architecture
 
 ### Emotion Classification (CNN)
 - 4 Convolutional blocks including:
@@ -31,44 +27,24 @@
   - Batch Normalization
   - Final Dense Layer with Softmax activation
 
-</td>
-<td width="50%">
-
 ### Gender Classification (SVM)
 - HOG (Histogram of Oriented Gradients) feature extraction
 - Linear kernel SVM classifier
 - 80-20 train-test split ratio
-- Feature preprocessing and normalization
-- Optimized hyperparameter selection
 
-</td>
-</tr>
-</table>
-
-<h2 align="center">Performance Metrics</h2>
-
-<table>
-<tr>
-<td width="50%">
+## Performance Metrics
 
 ### Emotion Recognition Results
 - Test Accuracy: 0.67
 - Test Loss: 1.1542
 - F1-score: 0.65
 
-</td>
-<td width="50%">
-
 ### Gender Recognition Results
 - Accuracy: 0.88
 - Female F1-score: 0.88
 - Male F1-score: 0.88
 
-</td>
-</tr>
-</table>
-
-<h2 align="center">Installation Instructions</h2>
+## Installation Instructions
 
 ### Prerequisites
 - Python 3.7 or higher
@@ -173,28 +149,13 @@ python
 >>> exit()
 ```
 
-<h2 align="center">Dataset</h2>
+## Dataset
 
 This project uses:
 - FER 2013 Dataset for emotion recognition
 - Gender Dataset from Kaggle for gender classification
 
-<h2 align="center">Limitations</h2>
-
-- Accuracy variations across different emotions
-- Limited by image size in the dataset
-- Grayscale image processing only
-- Performance impact with multiple faces in frame
-- Real-time processing stutters with multiple subjects
-
-<h2 align="center">Future Improvements</h2>
-
-- Enhanced accuracy through additional data augmentation
-- Optimization for multiple face detection
-- Model architecture refinements
-- Performance optimization for real-time processing
-
-<h2 align="center">References</h2>
+## References
 
 - [FER 2013 Dataset](https://www.kaggle.com/datasets/msambare/fer2013/data)
 - [Gender Classification Dataset](https://www.kaggle.com/datasets/yasserhessein/gender-dataset)
