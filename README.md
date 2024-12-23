@@ -4,7 +4,7 @@
 
 <div align="center">This project implements a dual-model approach for real-time facial analysis, achieving <b>67% accuracy</b> in emotion detection and <b>88% accuracy</b> in gender classification.</div>
 
-<h2 align="center">Features</h2>
+## Features
 
 - Real-time emotion recognition using Convolutional Neural Networks (CNN)
 - Gender classification using Support Vector Machine (SVM) with HOG features
@@ -13,75 +13,38 @@
 - Gaussian blur and Haar cascade implementation for improved face detection
 - Batch normalization and dropout layers to prevent overfitting
 
-<h2 align="center">Model Architecture</h2>
+## Model Architecture
 
-<table align="center" style="margin: 0 auto; border-collapse: collapse;">
-<tr>
-<td align="left" style="padding: 20px; vertical-align: top;">
-<h3>Emotion Classification (CNN)</h3>
-
-• 4 Convolutional blocks including:
+### Emotion Classification (CNN)
+- 4 Convolutional blocks including:
   - Convolution Layer
   - Max Pooling Layer
   - Batch Normalization
   - Dropout Layer
-
-• Fully Connected blocks with:
+- Fully Connected blocks with:
   - Flatten Layer
   - Dense Layer
   - Batch Normalization
   - Final Dense Layer with Softmax activation
-</td>
-<td align="left" style="padding: 20px; vertical-align: top;">
-<h3>Gender Classification (SVM)</h3>
-
-• HOG (Histogram of Oriented Gradients) feature extraction
-• Linear kernel SVM classifier
-• 80-20 train-test split ratio
-• Feature preprocessing and normalization
-• Optimized hyperparameter selection
-</td>
-</tr>
-</table>
-
-<h2 align="center">Performance Metrics</h2>
-
-<table align="center" style="margin: 0 auto; border-collapse: collapse;">
-<tr>
-<td align="left" style="padding: 20px; vertical-align: top;">
-<h3>Emotion Recognition Results</h3>
-
-• Test Accuracy: 0.67
-• Test Loss: 1.1542
-• F1-score: 0.65
-</td>
-<td align="left" style="padding: 20px; vertical-align: top;">
-<h3>Gender Recognition Results</h3>
-
-• Accuracy: 0.88
-• Female F1-score: 0.88
-• Male F1-score: 0.88
-</td>
-</tr>
-</table>
-
-</td>
-<td width="50%">
 
 ### Gender Classification (SVM)
 - HOG (Histogram of Oriented Gradients) feature extraction
 - Linear kernel SVM classifier
 - 80-20 train-test split ratio
-- Feature preprocessing and normalization
-- Optimized hyperparameter selection
 
-</td>
-</tr>
-</table>
+## Performance Metrics
 
-<h2 align="center">Performance Metrics</h2>
+### Emotion Recognition Results
+- Test Accuracy: 0.67
+- Test Loss: 1.1542
+- F1-score: 0.65
 
-<h2 align="center">Installation Instructions</h2>
+### Gender Recognition Results
+- Accuracy: 0.88
+- Female F1-score: 0.88
+- Male F1-score: 0.88
+
+## Installation Instructions
 
 ### Prerequisites
 - Python 3.7 or higher
@@ -178,7 +141,7 @@ python
 >>> exit()
 ```
 
-<h2 align="center">References</h2>
+## References
 
 - [FER 2013 Dataset](https://www.kaggle.com/datasets/msambare/fer2013/data)
 - [Gender Classification Dataset](https://www.kaggle.com/datasets/yasserhessein/gender-dataset)
