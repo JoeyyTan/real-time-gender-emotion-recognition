@@ -92,12 +92,6 @@ Before running the project, you must download the pre-trained model:
    # With CUDA support (if you have NVIDIA GPU)
    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
    ```
-
-6. Install other dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
 ### macOS Installation
 
 1. Install Homebrew (if not already installed):
