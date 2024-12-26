@@ -127,11 +127,6 @@ Before running the project, you must download the pre-trained model:
    pip3 install torch torchvision torchaudio
    ```
 
-7. Install other dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
 ### Verification
 To verify the installation, run:
 ```bash
