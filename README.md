@@ -51,6 +51,8 @@
 - Git
 - pip (Python package installer)
 
+> **Note**: Before running real-time_trial.py, you need to modify the model path to your own path.
+
 ### Required Model Download
 Before running the project, you must download the pre-trained model:
 1. Download the model file from [this Google Drive link](https://drive.google.com/file/d/1dTc5i03YORHfJlixI6TDWCmLmEsLin2O/view?usp=sharing)
@@ -69,7 +71,7 @@ Before running the project, you must download the pre-trained model:
 2. Install Git:
    ```bash
    # Download Git from
-   https://git-scm.com/download/windows
+   https://git-scm.com/downloads/win
    ```
 
 3. Clone the repository:
