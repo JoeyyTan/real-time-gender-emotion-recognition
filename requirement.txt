@@ -1,0 +1,48 @@
+Emotion and Gender Recognition System Requirements
+Follow these steps to install all dependencies:
+
+Windows:
+1. Create and activate virtual environment:
+   python -m venv venv
+   .\venv\Scripts\activate
+
+macOS/Linux:
+1. Create and activate virtual environment:
+   python3 -m venv venv
+   source venv/bin/activate
+
+Then for all systems:
+2. Install requirements:
+   pip install -r requirements.txt
+
+Note: If you have NVIDIA GPU and want to use CUDA:
+- Remove torch, torchvision, torchaudio lines below
+- Run: pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+Common issues:
+- If dlib installation fails, install CMake and Visual Studio Build Tools first
+- For Windows: Download Visual Studio Build Tools from https://visualstudio.microsoft.com/visual-cpp-build-tools/
+- For macOS: Install Xcode Command Line Tools: xcode-select --install
+
+# Core Machine Learning Libraries
+numpy>=1.19.5
+torch>=1.9.0
+torchvision>=0.10.0
+torchaudio>=0.9.0
+tensorflow>=2.7.0
+keras>=2.7.0
+scikit-learn>=0.24.2
+
+# Image Processing
+opencv-python>=4.5.4
+pillow>=8.3.1
+dlib>=19.22.0
+
+# Data Analysis and Visualization
+pandas>=1.3.0
+matplotlib>=3.4.3
+
+Optional but recommended for better performance
+opencv-contrib-python>=4.5.4  # Additional OpenCV modules
+scipy>=1.7.0                  # Scientific computing
+tqdm>=4.62.0                 # Progress bars
